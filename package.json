@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget/issues"
   },
-  "homepage": "https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget#readme"
+  "homepage": "https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget#readme",
+  "devDependencies": {
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1"
+  }
 }
