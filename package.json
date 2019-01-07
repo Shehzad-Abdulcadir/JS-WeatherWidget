@@ -1,24 +1,28 @@
 {
-  "name": "JS-WeatherWidget",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack --mode production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget/issues"
-  },
-  "homepage": "https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget#readme",
-  "devDependencies": {
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.1"
-  }
+	"name": "JS-WeatherWidget",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "webpack --mode development",
+		"build": "webpack --mode production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget/issues"
+	},
+	"homepage": "https://github.com/Shehzad-Abdulcadir/JS-WeatherWidget#readme",
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.2.3",
+		"babel-loader": "^8.0.5",
+		"webpack": "^4.28.3",
+		"webpack-cli": "^3.2.1"
+	}
 }
