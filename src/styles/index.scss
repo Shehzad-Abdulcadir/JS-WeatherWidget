@@ -1,9 +1,41 @@
 @import "../../node_modules/normalize.css/normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+// Variables
 $body-color: #000;
 $text-color: #fff;
+$primary-font: 'Roboto', sans-serif;
 
 body {
-  background-color: $body-color;
-  color: $text-color;
+	background-color: $body-color;
+	color: $text-color;
+	font-family: $primary-font;
+	font-size: 18px;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.title {
+	font-size: 42px;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 26px;
+	text-align: center;
+
+	.link {
+		color: $text-color;
+		text-decoration: none;
+		transition: all 0.3s;
+
+		&:hover {
+			color: #ff0000;
+		}
+	}
 }
