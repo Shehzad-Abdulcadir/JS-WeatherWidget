@@ -1,9 +1,10 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import '../../node_modules/normalize.css/normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 // Variables
 $body-color: #000;
 $text-color: #fff;
+$hover-color: #f00;
 $primary-font: 'Roboto', sans-serif;
 
 body {
@@ -25,6 +26,11 @@ body {
 	text-align: center;
 }
 
+.content {
+	font-size: 16px;
+	text-align: center;
+}
+
 .subtitle {
 	font-size: 26px;
 	text-align: center;
@@ -32,10 +38,10 @@ body {
 	.link {
 		color: $text-color;
 		text-decoration: none;
-		transition: all 0.3s;
+		transition: all .3s;
 
 		&:hover {
-			color: #ff0000;
+			color: $hover-color;
 		}
 	}
 }
