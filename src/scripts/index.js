@@ -17,7 +17,14 @@ request.onload = function() {
     if (this.status >= 200 && this.status < 400) {
     // Success!
         var data = JSON.parse(this.response);
+        var content = document.querySelector('.js-content');
+        var location = document.querySelector('.js-location');
         console.log(data);
+
+        if (data && content) {
+            content.textContent = data.daily.summary;
+        }
+
     } else {
         // We reached our target server, but it returned an error
         console.log('The API request returned an error.');
