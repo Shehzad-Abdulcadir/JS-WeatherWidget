@@ -19,7 +19,6 @@ request.onload = function() {
         var data = JSON.parse(this.response);
         var content = document.querySelector('.js-content');
         var location = document.querySelector('.js-location');
-        console.log(data);
 
         if (data && content) {
             content.textContent = data.daily.summary;
@@ -28,6 +27,7 @@ request.onload = function() {
     } else {
         // We reached our target server, but it returned an error
         console.log('The API request returned an error.');
+        content.textContent = 'The API request returned an error.';
     }
 };
 
