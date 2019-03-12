@@ -17,11 +17,18 @@ request.onload = function() {
     if (this.status >= 200 && this.status < 400) {
     // Success!
         var data = JSON.parse(this.response);
+        var iconType = data.daily.icon.toUpperCase();
         var content = document.querySelector('.js-content');
         var location = document.querySelector('.js-location');
 
         if (data && content) {
+            var skycons = new Skycons({
+                "color": "white",
+                "resizeClear": true
+            });
+            skycons.add("icon1", Skycons.RAIN);
             content.textContent = data.daily.summary;
+            skycons.play();
         }
 
     } else {
